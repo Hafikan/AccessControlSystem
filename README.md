@@ -11,6 +11,9 @@ Web üzerinden izlenebilir ve yönetilebilir bir Django arayüzü sağlar.
 - PostgreSQL (ya da SQLite dev aşamasında)
 - Git
 
+
+![Proje Structure](media/structure.jpeg)
+
 ## 🚀 Geliştiriciler
 - Hafıkan Yeşilyurt
 - Melisa Erocağı
