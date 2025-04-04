@@ -25,6 +25,8 @@ SECRET_KEY = 'django-insecure-&zjapb0moa^9novnx0#f^h)$5k0q%u^4^^czxw_y$uf-$36!gl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+AUTH_USER_MODEL = 'Users.CustomUser'  # Custom user model
+
 ALLOWED_HOSTS = []
 
 
@@ -37,6 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'acces_control',
+    'Users.apps.UsersConfig',  # Custom user app
+    'Customers',
+    'Directors',
+
 ]
 
 MIDDLEWARE = [
@@ -115,7 +122,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
-
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
