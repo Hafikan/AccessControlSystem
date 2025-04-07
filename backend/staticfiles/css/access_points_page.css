@@ -1,0 +1,70 @@
+/* === Global === */
+*{
+
+    font-family: "Jura", sans-serif;
+  
+    font-optical-sizing: auto;
+  
+    font-weight: 300;
+  
+    font-style: normal;
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+}
+:root{
+    --palette1 : #1d1d1d;
+    --palette2 : #2F3237;
+    --palette3 : #76ABAE;
+    --palette4 : #EEEEEE;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--palette4);
+}
+
+.container{
+    position:relative;
+    width:100%;
+    
+}
+/* === Navigation === */
+.navigation{
+    position:fixed;
+    width:350px;
+    height:100%;
+    background-color: var(--palette1);
+    overflow: hidden;
+}
+.navigation ul{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+}
+.navigation ul li{
+    list-style:none;
+    cursor:pointer;
+    height: 80px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 18px 4px;;
+}
+
+.navigation ul li a{
+    text-decoration:none;
+    color: var(--palette4);
+    font-family: "Jura", sans-serif;
+    font-size: 22pt;
+    padding-left: 25px;
+    position:relative;
+    width: 100%;
+
+}
+
